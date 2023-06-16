@@ -44,8 +44,10 @@ WriteLine("Введите позицию строки: ");
 int a = int.Parse(ReadLine());
 WriteLine("Введите позицию столбца: ");
 int b = int.Parse(ReadLine());
-if (a > m && b > n)
-WriteLine("Такого числа нет");
+if (a > m || b > n)
+{
+    WriteLine("Такого числа нет");
+}
 else 
 {
     object c = array.GetValue(a, b);
